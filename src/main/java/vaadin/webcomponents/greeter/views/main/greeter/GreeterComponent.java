@@ -20,8 +20,8 @@ public class GreeterComponent extends Component implements HasSize {
 		super.onAttach(attachEvent);
 		attachEvent.getUI().getPage().executeJs(
 			"var s = document.createElement('script');s.type='module'; s.src=$0;document.head.appendChild(s);",
-			"//greeter-master.cfapps.io/web-component/ve-greeter.js"); //crashes
-			//"//greeter.cfapps.io/greeter/web-component/ve-greeter.js");
+			//"//greeter-master.cfapps.io/web-component/ve-greeter.js"); //crashes
+			"//greeter-develop.cfapps.io/greeter/web-component/ve-greeter.js");
 			//"//localhost:9090/greeter/web-component/ve-greeter.js");
         setWidth("100%");
     }
