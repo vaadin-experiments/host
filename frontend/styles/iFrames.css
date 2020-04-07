@@ -1,0 +1,21 @@
+iFrame.appFrame, .frameContainer {
+    border-width: 0px;
+    width: 100%;
+    min-height: 92vh;
+    overflow: hidden;
+}
+.frameContainer.hidden {
+    display: none;
+}
+
+.navbar {
+    min-height: 7vh;
+}
+.navbar-tabs {
+    flex-flow: column-reverse;
+    align-self: flex-end;
+}
+
+#navtarget {
+    width: 100vw;
+}

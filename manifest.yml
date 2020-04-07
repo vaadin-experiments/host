@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: host-master
+  - name: host-iframe
     memory: 256M
     disk_quota: 500M  
     instances: 1
@@ -9,3 +9,6 @@ applications:
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
       JAVA_OPTS: '-Xss349k -Xmx250m'
+      MENU_APPS_GREETER_URL: https://greeter.cfapps.io/greeter/
+      MENU_APPS_BOOKSTORE_URL: https://book-store.cfapps.io/bookstore/
+      MENU_APPS_PETSTORE_URL: https://pet-store.cfapps.io/petstore/
